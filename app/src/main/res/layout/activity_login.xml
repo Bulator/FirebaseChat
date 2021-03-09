@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="15dp"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:text="@string/sign_in"
+        android:textStyle="bold"
+        android:fontFamily="@font/gilroy_bold"/>
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/gilroy_light"
+        android:background="@color/colorTextBackground"/>
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColor="@color/colorText"
+        android:fontFamily="@font/gilroy_light"
+        android:background="@color/colorTextBackground"/>
+
+        <Button
+            android:id="@+id/logIn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:text="@string/log_in"/>
+
+    <Button
+        android:id="@+id/logSignUp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorDarkGray"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorAccent"
+        app:backgroundTint="@color/colorDarkGray" />
+
+</LinearLayout>
